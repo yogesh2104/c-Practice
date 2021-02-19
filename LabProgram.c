@@ -30,7 +30,6 @@
 //     return 0;
 // }
 
-
 // write a program to find area of circle
 
 // #include <stdio.h>
@@ -44,7 +43,6 @@
 //     printf("The area of circle is %f",rad);
 //     return 0;
 // }
-
 
 // wap to program to find greatest number among given three integers number
 
@@ -69,7 +67,6 @@
 //     }
 //     return 0;
 // }
-
 
 // wap to find area of triangle a= (h*b)/2
 
@@ -125,12 +122,6 @@
 //     return 0;
 // }
 
-
-
-
-
-
-
 // wap to enter five sub marks and calculate avg, total,grade.(using if else)
 // #include <stdio.h>
 
@@ -173,7 +164,6 @@
 //     }
 //     return 0;
 // }
-
 
 // wap to enter five sub marks and calculate avg, total,grade.(using switch)
 
@@ -223,16 +213,13 @@
 //             }
 //             else {
 //             printf("F grade\n");
-//             } 
+//             }
 //     default:
 //         printf("Error Find!\n");
 //         break;
 //     }
 //     return 0;
 // }
-
-
-
 
 // wap to find greatest number by using ternary operator
 // #include <stdio.h>
@@ -245,9 +232,6 @@
 //     printf("%d is greatest number", greatest);
 //     return 0;
 // }
-
-
-
 
 // wap to implement goto statement
 /* about goto statement 
@@ -266,7 +250,6 @@ goto example */
 //     goto table ;
 //     }
 
-
 // #include <stdio.h>
 // int main(){
 //     int sum = 0,i;
@@ -278,7 +261,6 @@ goto example */
 //     addition:
 //     printf("%d",sum);
 // }
-
 
 // #include <stdio.h>
 // int main(){
@@ -292,16 +274,11 @@ goto example */
 //                 goto end;
 //             }
 //         }
-        
+
 //     }
 //     end:
-//     return 0;  
+//     return 0;
 // }
-
-
-
-
-
 
 // wap to print name 5 time uing loop
 
@@ -310,10 +287,9 @@ goto example */
 //     int i;
 //     for (i=0; i< 5; i++){
 //         printf("My name is Yogesh.\n");
-//     } 
+//     }
 //     return 0;
 // }
-
 
 // wap to print name 5 time uing loop
 
@@ -342,8 +318,6 @@ goto example */
 //     return 0;
 // }
 
-
-
 // wap to print table of given number
 
 // #include <stdio.h>
@@ -357,8 +331,6 @@ goto example */
 //     }
 //     return 0;
 // }
-
-
 
 // wap to print table form 1 to 10
 
@@ -374,7 +346,6 @@ goto example */
 //     }
 //     return 0;
 // }
-
 
 // wap to print reverse number of given digit
 
@@ -393,8 +364,6 @@ goto example */
 //     printf("Revers number = %d",rvs);
 //     return 0;
 // }
-
-
 
 // wap to find number is palindrome or not
 
@@ -417,10 +386,9 @@ goto example */
 //     else{
 //         printf("%d is not palindrome number",orgnum);
 //     }
-    
+
 //     return 0;
 // }
-
 
 // wap to find number whether number is armstrong or not
 
@@ -444,9 +412,6 @@ goto example */
 //     }
 //     return 0;
 // }
-
-
-
 
 // wap to check number is prime or not
 
@@ -476,8 +441,6 @@ goto example */
 //     return 0;
 // }
 
-
-
 // wap to find factorial of given number
 
 // #include <stdio.h>
@@ -496,7 +459,7 @@ goto example */
 //         }
 //         printf("Factorial of %d = %llu",n,fact);
 //     }
-    
+
 //     return 0;
 // }
 
@@ -519,7 +482,6 @@ goto example */
 
 // }
 
-
 // wap to swap a number with third variable.
 // #include <stdio.h>
 
@@ -535,8 +497,6 @@ goto example */
 //     printf("After swap a=%d b=%d",a,b);
 //     return 0;
 // }
-
-
 
 // wap to print the given whether a number is positive or not
 
@@ -555,8 +515,6 @@ goto example */
 //     return 0;
 // }
 
-
-
 // wap to print the sum of digits of given number
 
 // #include <stdio.h>
@@ -573,9 +531,6 @@ goto example */
 //     printf("Sum is =%d",sum);
 //     return 0;
 // }
-
-
-
 
 // wap to traverse of 1-D array element
 
@@ -595,6 +550,130 @@ goto example */
 //     return 0;
 // }
 
+//find factorial using while loop
+// #include <stdio.h>
+
+// int main(){
+//     int i = 1, num = 7,fact = 1;
+//     while (i<=num){
+//         fact *=i;
+//         i++;
+//     }
+//     printf("The value of factorial %d is %d",num,fact);
+//     return 0;
+// }
+
+// prime number
+// this not a best way to do that
+// #include <stdio.h>
+
+// int main(){
+//     int n=1,i, prime=1;
+//     for (i=2;i<n;i++){
+//         if(n%i==0){
+//             prime =0;
+//             break;
+//         }
+//     }
+//         if(prime==0){
+//             printf("This is not a prime number ");
+//         }
+//         else{
+//             printf("This is prime number.");
+//         }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int i=2,n=4,prime=1;
+//     while(i<n){
+//         if (n%i==0){
+//             prime==0;
+//             break;
+//         }
+//         i++;
+//     }
+//     if (prime==0){
+//         printf("This is not a prime number.");
+//     }
+//     else{
+//         printf("This is prime number.");
+//     }
+//     return 0;
+// }
+
+// 2d array
+// #include <stdio.h>
+
+// int main(){
+//     int i,j;
+//     int arr[2][3]={{1,2,3},
+//     {4,5,6}};
+//     for(i=0;i<2;i++){
+//         for(j=0;j<3;j++){
+//             printf("%d",arr[i][j]);
+//         }
+//     }
+//     return 0;
+// }
+
+// 3D array
+
+// #include <stdio.h>
+
+// int main(){
+//     int i,j,k;
+//     int arr[2][2][3] = {{{1,2,3},{4,5,6}},
+//                         {{7,8,9},{10,11,12}}};
+//     for(i=0;i<2;i++){
+//         for(j=0;j<2;j++){
+//             for(k=0;k<3;k++){
+//                 printf("%d",arr[0][2][1]);
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+// FCFS : AIM : A program to simulate the FCFS CPU scheduling algorithm
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+             void
+             main()
+{
+    int n, b[10], w[10], i, j, h;
+    int stime[10];
+    float avg = 0;
+    printf("JOB SCHEDULING ALGORITHM[FCFS]");
+    printf("\n*****************************************************\n");
+    printf("Enter howmany jobs:");
+    scanf("%d", &n);
+    printf("Enter burst time for corresponding job....");
+    for (i = 0; i < n; i++)
+    {
+        printf("\nProcess %d:", i + 1);
+        scanf("%d", &b[i]);
+    }
+    w[0] = 0;
+    printf("process 1 waiting time is 0");
+    for (i = 1; i < n; i++)
+    {
+        w[i] = b[i - 1] + w[i - 1];
+        printf("\nProcess %d waiting time: %d", i + 1, w[i]);
+        avg += w[i];
+    }
+    printf("\ntotal waiting time:%f", avg);
+    printf("\n\nthe average waiting time is:%f\n", avg / n);
+    getch();
+}
 
 
 
@@ -609,49 +688,209 @@ goto example */
 
 
 
+// JOB SCHEDULING ALGORITHM[SJF]
+// #include <stdio.h>
+// #include <conio.h>
+// #include <dos.h>
+// void main()
+// {
+//     int n, b[10], w[10], i, j, h, t, tt;
+//     int stime[10], a[10];
+//     float avg = 0;
+//     printf("JOB SCHEDULING ALGORITHM[SJF]");
+//     printf("\n*****************************************************\n");
+//     printf("\nEnter howmany jobs:");
+//     scanf("%d", &n);
+//     printf("\nEnter burst time for corresponding job....\n");
+//     for (i = 1; i <= n; i++)
+//     {
+//         printf("\nProcess %d:", i);
+//         scanf("%d", &b[i]);
+//         a[i] = i;
+//     }
+//     for (i = 1; i <= n; i++)
+//         for (j = i; j <= n; j++)
+//             if (b[i] > b[j])
+//             {
+//                 t = b[i];
+//                 tt = a[i];
+//                 b[i] = b[j];
+//                 a[i] = a[j];
+//                 b[j] = t;
+//                 a[j] = tt;
+//             }
+//     w[1] = 0;
+//     printf("\nprocess %d waiting time is 0", a[1]);
+//     for (i = 2; i <= n; i++)
+//     {
+//         w[i] = b[i - 1] + w[i - 1];
+//         printf("\nProcess %d waiting time: %d", a[i], w[i]);
+//         avg += w[i];
+//     }
+//     printf("\ntotal waiting time:%f", avg);
+//     printf("\n\nthe average waiting time is:%f\n", avg / n);
+//     getch();
+// }
 
+// Priority
+// AIM: - A program to simulate the priority CPU scheduling algorithm.
+// PROGRAM: -
+// #include <stdio.h>
+// #include <conio.h>
+// #include <dos.h>
+// void main()
+// {
+//     int n, b[10], w[10], i, j, h, t, tt;
+//     int stime[10], a[10], p[10];
+//     float avg = 0;
+//     printf("\nPRIORITY SCHEDULING ALGORITHM");
+//     printf("\n*****************************************************\n");
+//     printf("\nEnter howmany jobs:");
+//     scanf("%d", &n);
+//     printf("\nEnter burst time & priority for corresponding job....\n");
+//     for (i = 1; i <= n; i++)
+//     {
+//         printf("\nProcess %d:", i);
+//         scanf("%d %d", &b[i], &p[i]);
+//         a[i] = i;
+//     }
+//     for (i = 1; i <= n; i++)
+//         for (j = i; j <= n; j++)
+//             if (p[i] < p[j])
+//             {
+//                 t = b[i];
+//                 tt = a[i];
+//                 b[i] = b[j];
+//                 a[i] = a[j];
+//                 b[j] = t;
+//                 a[j] = tt;
+//             }
+//     w[1] = 0;
+//     printf("\nprocess %d waiting time is 0", a[1]);
+//     for (i = 2; i <= n; i++)
+//     {
+//         w[i] = b[i - 1] + w[i - 1];
+//         printf("\nProcess %d waiting time: %d", a[i], w[i]);
+//         avg += w[i];
+//     }
+//     printf("\ntotal waiting time:%f", avg);
+//     printf("\nthe average waiting time is:%f\n", avg / n);
+//     getch();
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ROUND ROBIN
+// AIM:- A program to simulate the Round Robin CPU scheduling algorithm.
+// PROGRAM: -
+// #include <stdio.h>
+// #include <conio.h>
+// int z[10], b[10], n, m[50], r, q, e = 0, avg = 0, i, j;
+// float f;
+// void main()
+// {
+//     printf("\nJOB SCHEDULING ALGORITHM[RR]");
+//     printf("\n*******************************************************\n");
+//     printf("\nEnter how many jobs:");
+//     scanf("%d", &n);
+//     printf("\nEnter burst time for corresponding job...\n");
+//     for (i = 1; i <= n; i++)
+//     {
+//         printf("Process %d: ", i);
+//         scanf("%d", &b[i]);
+//         z[i] = b[i];
+//     }
+//     printf("ENTER THE TIME SLICE VALUE:");
+//     scanf("%d", &q);
+//     rr();
+//     average();
+//     getch();
+//     return 0;
+// }
+// rr()
+// {
+//     int max = 0;
+//     max = b[1];
+//     for (j = 1; j <= n; j++)
+//         if (max <= b[j])
+//             max = b[j];
+//     if ((max % q) == 0)
+//         r = (max / q);
+//     else
+//         r = (max / q) + 1;
+//     for (i = 1; i <= r; i++)
+//     {
+//         printf("\nround %d", i);
+//         for (j = 1; j <= n; j++)
+//         {
+//             if (b[j] > 0)
+//             {
+//                 b[j] = b[j] - q;
+//                 if (b[j] <= 0)
+//                 {
+//                     b[j] = 0;
+//                     printf("\nprocess %d is completed", j);
+//                 }
+//                 else
+//                     printf("\nprocess %d remaining time is %d", j, b[j]);
+//             }
+//         }
+//     }
+//     return 0;
+// }
+// average()
+// {
+//     for (i = 1; i <= n; i++)
+//     {
+//         e = 0;
+//         for (j = 1; j <= r; j++)
+//         {
+//             if (z[i] != 0)
+//             {
+//                 if (z[i] >= q)
+//                 {
+//                     m[i + e] = q;
+//                     z[i] -= q;
+//                 }
+//                 else
+//                 {
+//                     m[i + e] = z[i];
+//                     z[i] = 0;
+//                 }
+//             }
+//             else
+//                 m[i + e] = 0;
+//             e = e + n;
+//         }
+//     }
+//     for (i = 2; i <= n; i++)
+//         for (j = 1; j <= i - 1; j++)
+//             avg = avg + m[j];
+//     for (i = n + 1; i <= r * n; i++)
+//     {
+//         if (m[i] != 0)
+//         {
+//             for (j = i - (n - 1); j <= i - 1; j++)
+//                 avg = m[j] + avg;
+//         }
+//     }
+//     f = avg / n;
+//     printf("\nTOTAL WATING:%d", avg);
+//     printf("\n\nAVERAGE WAITING TIME:%f\n", f);
+//     for (i = 1; i <= r * n; i++)
+//     {
+//         if (m[i] != 0)
+//             if (i % n == 0)
+//             {
+//                 printf("P%d", (i % n) + (n));
+//             }
+//             else
+//                 printf("P%d", (i % n));
+//         for (j = 1; j <= m[i]; j++)
+//             printf("%c", 22);
+//     }
+//     printf("\n");
+//     getch();
+//     return 0;
+// }
 
 
 
@@ -687,10 +926,6 @@ goto example */
 //     return 0;
 // }
 
-
-
-
-
 // write a program to find leap year
 // #include<stdio.h>
 // int main(){
@@ -705,11 +940,6 @@ goto example */
 //     }
 //     return 0;
 // }
-
-
-
-
-
 
 // write a program to print the grade on avgrage
 
@@ -741,9 +971,7 @@ goto example */
 //     return 0;
 // }
 
-
-
-// fcfs in os 
+// fcfs in os
 // #include<stdio.h>
 // int main(){
 //     int n,bt[10],wt[10],tat[10],avtat=0,avwt=0,i,j;
@@ -760,7 +988,7 @@ goto example */
 //         wt[i]=0;
 //         for(j=0;j<i;j++){
 //             wt[i]+=bt[j];
-//         }  
+//         }
 //     }
 //     printf("\nProcess\t BurstTime\tWating Time\tTurnaround time");
 //     for(i=0;i<n;i++){
@@ -775,25 +1003,3 @@ goto example */
 //     printf("\nAverage Turnaround Time:%d",avtat);
 //     return 0;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
