@@ -637,56 +637,38 @@ goto example */
 //     return 0;
 // }
 
-
-
-
-
-
 // FCFS : AIM : A program to simulate the FCFS CPU scheduling algorithm
-#include <stdio.h>
-#include <conio.h>
-#include <dos.h>
-             void
-             main()
-{
-    int n, b[10], w[10], i, j, h;
-    int stime[10];
-    float avg = 0;
-    printf("JOB SCHEDULING ALGORITHM[FCFS]");
-    printf("\n*****************************************************\n");
-    printf("Enter howmany jobs:");
-    scanf("%d", &n);
-    printf("Enter burst time for corresponding job....");
-    for (i = 0; i < n; i++)
-    {
-        printf("\nProcess %d:", i + 1);
-        scanf("%d", &b[i]);
-    }
-    w[0] = 0;
-    printf("process 1 waiting time is 0");
-    for (i = 1; i < n; i++)
-    {
-        w[i] = b[i - 1] + w[i - 1];
-        printf("\nProcess %d waiting time: %d", i + 1, w[i]);
-        avg += w[i];
-    }
-    printf("\ntotal waiting time:%f", avg);
-    printf("\n\nthe average waiting time is:%f\n", avg / n);
-    getch();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+// #include <stdio.h>
+// #include <conio.h>
+// #include <dos.h>
+//              void
+//              main()
+// {
+//     int n, b[10], w[10], i, j, h;
+//     int stime[10];
+//     float avg = 0;
+//     printf("JOB SCHEDULING ALGORITHM[FCFS]");
+//     printf("\n*****************************************************\n");
+//     printf("Enter howmany jobs:");
+//     scanf("%d", &n);
+//     printf("Enter burst time for corresponding job....");
+//     for (i = 0; i < n; i++)
+//     {
+//         printf("\nProcess %d:", i + 1);
+//         scanf("%d", &b[i]);
+//     }
+//     w[0] = 0;
+//     printf("process 1 waiting time is 0");
+//     for (i = 1; i < n; i++)
+//     {
+//         w[i] = b[i - 1] + w[i - 1];
+//         printf("\nProcess %d waiting time: %d", i + 1, w[i]);
+//         avg += w[i];
+//     }
+//     printf("\ntotal waiting time:%f", avg);
+//     printf("\n\nthe average waiting time is:%f\n", avg / n);
+//     getch();
+// }
 
 // JOB SCHEDULING ALGORITHM[SJF]
 // #include <stdio.h>
@@ -891,6 +873,265 @@ goto example */
 //     getch();
 //     return 0;
 // }
+
+
+
+
+// #include <stdio.h>
+// #include <conio.h>
+// void main()
+// {
+//     int ms, mp[10], i, temp, n = 0;
+//     char ch = 'y';
+//     printf("\nEnter the total memory available (in Bytes)-- ");
+//     scanf("%d", &ms);
+//     temp = ms;
+//     for (i = 0; ch == 'y'; i++, n++)
+//     {
+//         printf("\nEnter memory required for process %d (in Bytes) -- ", i + 1);
+//         scanf("%d", &mp[i]);
+//         if (mp[i] <= temp)
+//         {
+//             printf("\nMemory is allocated for Process %d ", i + 1);
+//             temp = temp - mp[i];
+//         }
+//         else
+//         {
+//             printf("\nMemory is Full");
+//             break;
+//         }
+//         printf("\nDo you want to continue(y/n) -- ");
+
+//         scanf(" %c", &ch);
+//     }
+//     printf("\n\nTotal Memory Available -- %d", ms);
+//     printf("\n\n\tPROCESS\t\t MEMORY ALLOCATED ");
+//     for (i = 0; i < n; i++)
+//         printf("\n \t%d\t\t%d", i + 1, mp[i]);
+//     printf("\n\nTotal Memory Allocated is %d", ms - temp);
+//     printf("\nTotal External Fragmentation is %d", temp);
+//     getch();
+// }
+
+// mft
+
+// #include<stdio.h>
+// #include<conio.h>
+// void main()
+// {
+// int ms, bs, nob, ef,n, mp[10],tif=0;
+// int i,p=0;
+// printf("Enter the total memory available (in Bytes) -- ");
+// scanf("%d",&ms);
+// printf("Enter the block size (in Bytes) -- ");
+// scanf("%d", &bs);
+// nob=ms/bs;
+// ef=ms - nob*bs;
+// printf("\nEnter the number of processes -- ");
+// scanf("%d",&n);
+// for(i=0;i<n;i++)
+// {
+// printf("Enter memory required for process %d (in Bytes)-- ",i+1);
+// scanf("%d",&mp[i]);
+// }
+// printf("\nNo. of Blocks available in memory -- %d",nob);
+// printf("\n\nPROCESS\tMEMORY REQUIRED\t ALLOCATED\tINTERNAL FRAGMENTATION");
+// for(i=0;i<n && p<nob;i++)
+// {
+// printf("\n %d\t\t%d",i+1,mp[i]);
+// if(mp[i] > bs)
+// printf("\t\tNO\t\t---");
+// else
+// {
+// printf("\t\tYES\t%d",bs-mp[i]);
+// tif = tif + bs-mp[i];
+// p++;
+// } }
+// if(i<n)
+// printf("\nMemory is Full, Remaining Processes cannot be accomodated");
+// printf("\n\nTotal Internal Fragmentation is %d",tif);
+// printf("\nTotal External Fragmentation is %d",ef);
+// getch();
+// }
+
+
+// // banker algo
+
+
+// #include<stdio.h>
+// struct file
+// {
+// int all[10];
+// int max[10];
+// int need[10];
+// int flag;
+// };
+// void main()
+// {
+// struct file f[10];
+// int fl;
+// int i, j, k, p, b, n, r, g, cnt=0, id, newr;
+// int avail[10],seq[10];
+// printf("Enter number of processes -- ");
+// scanf("%d",&n);
+// printf("Enter number of resources -- ");
+// scanf("%d",&r);
+// for(i=0;i<n;i++)
+// {
+// printf("Enter details for P%d",i);
+// printf("\nEnter allocation\t -- \t");
+// for(j=0;j<r;j++)
+// scanf("%d",&f[i].all[j]);
+// printf("Enter Max\t\t -- \t");
+// for(j=0;j<r;j++)
+// scanf("%d",&f[i].max[j]);
+// f[i].flag=0;
+// }
+// printf("\nEnter Available Resources\t -- \t");
+// for(i=0;i<r;i++)
+// scanf("%d",&avail[i]);
+// printf("\nEnter New Request Details -- ");
+// printf("\nEnter pid \t -- \t");
+// scanf("%d",&id);
+// printf("Enter Request for Resources \t -- \t");
+// for(i=0;i<r;i++)
+// {
+// scanf("%d",&newr);
+// f[id].all[i] += newr;
+// avail[i]=avail[i] - newr;
+// }
+// for(i=0;i<n;i++)
+// {
+// for(j=0;j<r;j++)
+// {
+// f[i].need[j]=f[i].max[j]-f[i].all[j];
+// if(f[i].need[j]<0)
+// f[i].need[j]=0;
+// }
+// }
+// cnt=0;
+// fl=0;
+// while(cnt!=n)
+// {
+// g=0;
+// for(j=0;j<n;j++)
+// {
+// if(f[j].flag==0)
+// {
+// b=0;
+// for(p=0;p<r;p++)
+// {
+// if(avail[p]>=f[j].need[p])
+// b=b+1;
+// else
+// b=b-1;
+// }
+// if(b==r)
+// {
+// printf("\nP%d is visited",j);
+// seq[fl++]=j;
+// f[j].flag=1;
+// for(k=0;k<r;k++)
+// avail[k]=avail[k]+f[j].all[k];
+// cnt=cnt+1;
+// printf("(");
+// for(k=0;k<r;k++)
+// printf("%3d",avail[k]);
+// printf(")");
+// g=1;
+// }
+// }
+// }
+// if(g==0)
+// {
+// printf("\n REQUEST NOT GRANTED -- DEADLOCK OCCURRED");
+// printf("\n SYSTEM IS IN UNSAFE STATE");
+// goto y;
+// }
+// }
+// printf("\nSYSTEM IS IN SAFE STATE");
+// printf("\nThe Safe Sequence is -- (");
+// for(i=0;i<fl;i++)
+// printf("P%d ",seq[i]);
+// printf(")");
+// y: printf("\nProcess\t\tAllocation\t\tMax\t\t\tNeed\n");
+// for(i=0;i<n;i++)
+// {
+// printf("P%d\t",i);
+// for(j=0;j<r;j++)
+// printf("%6d",f[i].all[j]);
+// for(j=0;j<r;j++)
+// printf("%6d",f[i].max[j]);
+// for(j=0;j<r;j++)
+// printf("%6d",f[i].need[j]);
+// printf("\n");
+// }
+// getch();
+// }
+
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main(){
+Int c1[10][10],a1[10][10],av[10],I,j,k,m,n,c,ne[10][10], flag=0;
+Clrscr();
+Printf("\n Enter the matrix");
+Scanf(“%d %d”, &m,&n);
+Printf(“\n Enter the claim matrix”);
+For(i=0;i<m;i++)
+{
+For(j=0;j<n;j++)
+{
+Scanf(“%d”, &c1[i][j]);
+}
+}
+Printf(“\n Enter the allocated matrix”);
+For(i=0;i<m;i++)
+{
+For(j=0;j<n;j++)
+{
+Scanf(“%d”, &a1[i][j]);
+}
+}
+Printf(“\n The need matrix”);
+For(i=0;i<m;i++)
+{
+    For(j=0;j<n;j++)
+{
+Ne[i][j]=c1[i][j]-a1[i][j];
+Printf(“\t %d”, ne[i][j]);
+}
+Printf((“\n”);
+}
+Printf(“\n Enter the available matrix”);
+For(i=0;i<3;i++)
+Scanf(“%d”,av[i]);
+Printf(“claim matrix :\n”);
+For(i=0;i<m;i++)
+{
+For(j=0;j<n;j++)
+{
+Printf(“\t %d”, c1[i][j]);
+}
+Printf((“\n”);
+}
+Printf(“\n allocated matrix :\n”);
+For(i=0;i<m;i++)
+{
+For(j=0;j<n;j++)
+{
+Printf(“\t %d”, a1[i][j]);
+}
+Printf((“\n”);
+}
+Printf(“\n available matrix :\n”);
+For(i=0;i<3;i++)
+{
+
+
 
 
 
