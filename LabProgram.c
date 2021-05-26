@@ -1071,80 +1071,6 @@ goto example */
 
 
 
-
-
-#include<stdio.h>
-#include<conio.h>
-void main(){
-Int c1[10][10],a1[10][10],av[10],I,j,k,m,n,c,ne[10][10], flag=0;
-Clrscr();
-Printf("\n Enter the matrix");
-Scanf(“%d %d”, &m,&n);
-Printf(“\n Enter the claim matrix”);
-For(i=0;i<m;i++)
-{
-For(j=0;j<n;j++)
-{
-Scanf(“%d”, &c1[i][j]);
-}
-}
-Printf(“\n Enter the allocated matrix”);
-For(i=0;i<m;i++)
-{
-For(j=0;j<n;j++)
-{
-Scanf(“%d”, &a1[i][j]);
-}
-}
-Printf(“\n The need matrix”);
-For(i=0;i<m;i++)
-{
-    For(j=0;j<n;j++)
-{
-Ne[i][j]=c1[i][j]-a1[i][j];
-Printf(“\t %d”, ne[i][j]);
-}
-Printf((“\n”);
-}
-Printf(“\n Enter the available matrix”);
-For(i=0;i<3;i++)
-Scanf(“%d”,av[i]);
-Printf(“claim matrix :\n”);
-For(i=0;i<m;i++)
-{
-For(j=0;j<n;j++)
-{
-Printf(“\t %d”, c1[i][j]);
-}
-Printf((“\n”);
-}
-Printf(“\n allocated matrix :\n”);
-For(i=0;i<m;i++)
-{
-For(j=0;j<n;j++)
-{
-Printf(“\t %d”, a1[i][j]);
-}
-Printf((“\n”);
-}
-Printf(“\n available matrix :\n”);
-For(i=0;i<3;i++)
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // write a program to find younger in age
 // #include <stdio.h>
 // int main(){
@@ -1167,6 +1093,14 @@ For(i=0;i<3;i++)
 //     return 0;
 // }
 
+
+
+
+
+
+
+
+
 // write a program to find leap year
 // #include<stdio.h>
 // int main(){
@@ -1181,6 +1115,16 @@ For(i=0;i<3;i++)
 //     }
 //     return 0;
 // }
+
+
+
+
+
+
+
+
+
+
 
 // write a program to print the grade on avgrage
 
@@ -1211,6 +1155,12 @@ For(i=0;i<3;i++)
 //     }
 //     return 0;
 // }
+
+
+
+
+
+
 
 // fcfs in os
 // #include<stdio.h>
